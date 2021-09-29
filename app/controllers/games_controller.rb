@@ -1,5 +1,11 @@
 class GamesController < ApplicationController
   def create
+    # Экономим память! -  не используем Word.all.sample, а
+    # доверяем случайный выбор элемента СУБД
+    word = Word.order('RANDOM()').first
+    game = word.games.create
+
+    redirect_to game
   end
 
   def show
