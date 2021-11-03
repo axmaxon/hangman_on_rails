@@ -1,24 +1,6 @@
-# README
+Веб-приложение "Hangman"
+===
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Приложение является Rails-версией консольной игры. Здесь также нужно гадать скрытое слово по буквам. 
+При каждом неправильном ответе к человечку на виселице будет прибавляться часть тела. Если пользователь ошибся 7 раз,
+игра будет проиграна, а в браузере отобразится полное изображение висельника.
