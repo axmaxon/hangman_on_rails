@@ -1,0 +1,15 @@
+<h1>Words</h1>
+
+<ul>
+  <%= render @words %>
+</ul>
+
+<%= form_with model: @word do |form| %>
+  <div class="form-group">
+    <%= form.text_field :text, class: 'form-control' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Добавить слово", class: 'btn btn-info' %>
+  </div>
+<% end %>
