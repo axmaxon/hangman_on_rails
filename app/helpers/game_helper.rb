@@ -16,4 +16,8 @@ module GameHelper
   def errors_to_show(game)
     game.errors_letters.join(" ")
   end
+
+  def fa_icon(icon_class)
+    tag.span('', class: "fa fa-#{icon_class}")
+  end
 end
