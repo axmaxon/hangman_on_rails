@@ -1,1 +1,12 @@
-<%= "#{word.text} " %>
+<span class="word">
+  <span class="word-text">
+    <%= "#{word.text} " %>
+  </span>
+
+  <%= link_to(
+        fa_icon('times'),
+        word_path(word),
+        method: :delete,
+        data: {confirm: 'точно?'}
+      ) %>
+</span>
