@@ -4,12 +4,8 @@
   <%= render @words %>
 </ul>
 
-<%= form_with model: @word do |form| %>
+<%= form_with url: words_path, id: 'word-form' do |f| %>
   <div class="form-group">
-    <%= form.text_field :text, class: 'form-control' %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit "Добавить слово", class: 'btn btn-info' %>
+    <%= f.text_field :text, class: "form-control", placeholder: "Введите слово и нажмите Enter" %>
   </div>
 <% end %>
