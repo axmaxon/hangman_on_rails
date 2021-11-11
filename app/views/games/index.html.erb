@@ -1,4 +1,4 @@
-<%= image_pack_tag 'hangman.png', size: '200x200', alt: 'Hangman', class: 'main-pic' %>
+<%= image_pack_tag 'hangman.png', size: '200x200', alt: 'Hangman', class: 'main-pic mt-5' %>
 
 <h1>Hangman</h1>
 
@@ -8,4 +8,8 @@
 
 <div class="mt-3">
   <%= button_to 'Новая игра', games_path, method: :post, class: 'btn btn-light' %>
+</div>
+
+<div class="mt-3">
+  <%= button_to 'Посмотреть слова', words_path, method: :get, class: 'btn btn-light' %>
 </div>
